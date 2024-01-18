@@ -14,7 +14,7 @@ int main()
     	for(int i=0;i<3;i++){
 		    sum += chef[i];
 		}
-
+///////
 		if(sum < 2){
 		    printf("Water filling time\n");
 		}
