@@ -9,28 +9,29 @@ int main()
     {
         scanf("%i",&p);
 
-        if(p==0 || p==1 || p ==2 || p == 3){
-            flag = 1;
+        if(p == 0 || p == 1)
+        {
+            flag += 1;
         }
 
-        for(int i=2;i<(p/2);i++){
+        for(int i=2;i<p;i++){
 
             if(p%i == 0){
-                flag = 1;
+                flag += 1;
                 break; 
             }
 
             else{
-                flag = 0;
+                flag += 0;
             }
         }
-        if(flag == 1){
-            printf("yes\n");
-        }
-        else{
+        if(flag >= 1){
             printf("no\n");
         }
-
+        else{
+            printf("yes\n");
+        }
+        flag = 0;
     }
     
     return 0;
